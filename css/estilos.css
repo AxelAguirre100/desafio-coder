@@ -37,7 +37,11 @@ h1 {
 
 .nav-list li {
     display: inline-block;
-    margin: 0px 10px;
+    padding: 0px 10px;
+}
+
+.nav-list li:hover {
+    transform: scale(1.2)
 }
 
 .texto {
