@@ -14,6 +14,35 @@ h1 {
     font-size: 40px;
     color: antiquewhite;
     background-color: rgb(0, 47, 135);
+    margin: 0px;
+}
+
+.imagen-principal {
+    width: 90%;
+    display: flex;
+    object-fit: fill;
+}
+
+.col-sm-4 {
+    margin: auto;
+}
+
+.col-sm-8 {
+    display: flex;
+    object-fit: contain;
+}
+
+.col-sm-12 {
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.container {
+    margin: auto !important;
+    font-size: 20px;
+    margin-top: 30px !important;
+    height: auto;
 }
 
 .nav {
@@ -59,15 +88,6 @@ h1 {
     width: 100%;
 }
 
-.texto {
-    text-align: center;
-    font-family: 'Lato';
-    font-size: 25px;
-    padding: 10px;
-    grid-area: texto;
-    margin-top: 50px;
-}
-
 .nav-list li a {
     color: antiquewhite;
 }
@@ -83,69 +103,30 @@ h1 {
     padding: 50px;
 }
 
-.section-index {
-    display: grid;
-    grid-template-areas: 
-    "imagen aside"
-    "texto texto"
-    ;
-}
-
-.imagen {
-    grid-area: imagen;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-.imagen img {
-    width: 90%;
-}
-
-.aside {
-    grid-area: aside;
-    text-align: center;
-    margin: auto;
-    font-family: 'Lato';
-    font-size: 25px;
-}
-
 /* ---------------------- */
 
 /* Contacto */
 
 form {
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-}
-
-.formulario div input {
-    margin-bottom: 1rem;
-    background: #fff;
-    border: 1px solid #9c9c9c;
-}
-
-.formulario div textarea {
-    height: 100px;
-    border: 2px solid black;
-}
-
-input:focus {
-    outline: 2px solid rgb(53, 97, 240);
-}
-
-.formulario {
-    border: solid 5px black;
-    width: 18rem;
-    height: 23rem;
-    text-align: center;
+    margin: auto;
+    width: 300px;
+    border: 5px solid black;
     border-radius: 10px;
-    justify-content: center;
-    background: #f9f9f9;
+    margin-bottom: 100px !important;
+    margin-top: 100px !important;
 }
 
-.formulario div {
+form div {
     padding: 10px;
+}
+
+.button{
+    justify-content: center;
+    text-align: center;
+    margin: auto !important;
+    margin-top: 10px !important;
+    width: 100px !important;
+    background-color: rgb(0, 47, 135);
 }
 
 textarea {
@@ -160,10 +141,6 @@ textarea {
     color: antiquewhite;
 }
 
-.contacto-main {
-    height: auto;
-}
-
 /* ---------------------- */
 
 /* Galeria */
@@ -174,49 +151,16 @@ textarea {
     padding: 50px;
 }
 
-.galeria {
-    width: 90%;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 500px;
-    gap: 20px;
-    padding-bottom: 50px;
-    padding-top: 20px;
-    justify-content: center;
-    margin: auto;
-}
-
-.galeria div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 10px 9px 11px -2px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 9px 11px -2px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 9px 11px -2px rgba(0, 0, 0, 0.75);
+.d-block {
+    height: 900px;
 }
 
 /* ---------------------- */
 
 /* sobre-nosotros */
 
-.sobre-nosotros-texto {
-    font-family: 'Lato';
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    font-size: 30px;
-    border: 5px solid black;
-    border-radius: 5px;
-    margin: 100px;
-}
-
-.sobre-nosotros-texto div {
-    padding: 10px;
-}
-
-.sobre-nosotros-main {
-    height: auto;
+.card-text-sobre-nosotros {
+    font-size: 30px !important;
 }
 
 .h2-sobre-nosotros {
@@ -230,8 +174,14 @@ textarea {
 
 /* Servicios */
 
-.servicios-main {
-    height: auto;
+.card {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.row {
+    margin: auto;
 }
 
 .h2-servicios {
@@ -239,55 +189,6 @@ textarea {
     color: antiquewhite;
     background-color: rgb(0, 47, 135);
     padding: 50px;
-}
-
-.card1 {
-    display: flex;
-    border: 5px solid black;
-    border-radius: 5px;
-    width: 18rem;
-    height: 20rem;
-    margin: 10px;
-    padding: 10px;
-    font-family: 'Lato';
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.card1 p {
-    margin: 50px;
-}
-
-.card2 {
-    display: flex;
-    border: 5px solid black;
-    border-radius: 5px;
-    width: 18rem;
-    height: 20rem;
-    margin: 10px;
-    padding: 10px;
-    font-family: 'Lato';
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.card2 p {
-    margin: 50px;
-}
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 25px;
-    margin: 100px;
-}
-
-.button {
-    width: 57px;
-    display: flex;
-    margin-left: 115px;
 }
 
 /* ---------------------- */
@@ -310,75 +211,29 @@ textarea {
         margin: 3px;
     }
 
-    .aside {
-        font-size: 20px;
-        margin: 50px 0px 0px 20px;
-    }
-
-    .texto {
-        font-size: 20px;
-        margin: 50px;
-    }
-
-    .imagen {
-        margin: 0px;
-    }
-
-    .imagen img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
+    .container {
+        font-size: 15px;
+        height: auto;
+        width: auto;
     }
     /* ---------------------- */
 
     /* Sobre Nosotros */
-    .sobre-nosotros-texto {
-        font-family: 'Lato';
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        font-size: 25px;
-        border: 5px solid black;
-        border-radius: 5px;
-        margin: 50px;
+    .card-text-sobre-nosotros {
+        font-size: 15px;
     }
-    /* ---------------------- */
-
-    /* Servicios */
-
-    .button {
-        width: 57px;
-        display: flex;
-        text-align: center;
-        margin: auto;
+    
+    .card-sobre-nosotros {
+        width: 30rem !important;
     }
 
     /* ---------------------- */
 }
-
-@media screen and (max-width:601px) {
+@media screen and (max-width:576px) {
 
     /* Index */
-    .imagen {
-        width: 300px;
-        text-align: center;
-        margin: 50px auto auto auto;
-    }
-
-    .aside {
-        font-size: 15px;
-    }
-
-    .texto {
-        font-size: 15px;
-    }
-
-    .section-index {
-        grid-template-areas: 
-        "imagen"
-        "aside"
-        "texto"
-        ;
+    .col-12 {
+        padding-top: 20px;
     }
 
     .nav-list li {
@@ -389,44 +244,12 @@ textarea {
     /* ---------------------- */
 
     /* Sobre Nosotros */
-    .sobre-nosotros-texto {
-        font-family: 'Lato';
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        font-size: 25px;
-        border: 5px solid black;
-        border-radius: 5px;
-        margin: 20px;
+    .card-text-sobre-nosotros {
+        font-size: 20px !important;
     }
-
-    /* ---------------------- */
-
-    /* Servicios */
-    .container {
-        display: flex;
-        font-size: 25px;
-        margin: auto auto auto auto;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card1 {
-        height: auto;
-        width: 200px;
-    }
-
-    .card2 {
-        height: auto;
-        width: 200px;
-    }
-    /* ---------------------- */
-
-    /* Galeria */
-    .galeria {
-        grid-template-columns: repeat(1, 1fr);
+    
+    .card-sobre-nosotros {
+        width: 19rem !important;
     }
     /* ---------------------- */
 }
